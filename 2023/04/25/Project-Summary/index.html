@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Uncovering Tumor Heterogeneity of Triple-negative Breast Cancer from Single-cell RNA Sequencing | Dao Wen&#39;s Blog</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Single-cell RNA sequencingRNA sequencing (RNA-seq) is a genomic approach for quantitative analysis of messenger RNA molecules in a biological sample and is useful for studying cellular responses. RNA-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Uncovering Tumor Heterogeneity of Triple-negative Breast Cancer from Single-cell RNA Sequencing">
+<meta property="og:url" content="http://example.com/2023/04/25/Project-Summary/index.html">
+<meta property="og:site_name" content="Dao Wen&#39;s Blog">
+<meta property="og:description" content="Single-cell RNA sequencingRNA sequencing (RNA-seq) is a genomic approach for quantitative analysis of messenger RNA molecules in a biological sample and is useful for studying cellular responses. RNA-">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/f1.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f2.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f3.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f4.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f5.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f6.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f7.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f8.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f9.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f10.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f11.png">
+<meta property="og:image" content="http://example.com/Project-Summary/f12.png">
+<meta property="article:published_time" content="2023-04-25T06:28:42.000Z">
+<meta property="article:modified_time" content="2023-06-13T03:58:26.628Z">
+<meta property="article:author" content="Dao Wen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/f1.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Dao Wen&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+				<img lazy-src="" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+			<h1 class="header-author"><a href="/">Dao Wen</a></h1>
+		</hgroup>
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">Home</a></li>
+				        
+							<li><a href="/archives">Archives</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="half-header-menu">
+						<a class="hide">Home</a>
+						<a>Tags</a>
+						<a>Links</a>
+						<a>About</a>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+						<!-- music -->
+						
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/">github</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">I&#39;m a developer.</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">Home</a></li>
+		        
+					<li><a href="/archives">Archives</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Project-Summary" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2023/04/25/Project-Summary/" class="article-date">
+  	<time datetime="2023-04-25T06:28:42.000Z" itemprop="datePublished">2023-04-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Uncovering Tumor Heterogeneity of Triple-negative Breast Cancer from Single-cell RNA Sequencing
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Single-cell-RNA-sequencing"><a href="#Single-cell-RNA-sequencing" class="headerlink" title="Single-cell RNA sequencing"></a>Single-cell RNA sequencing</h3><p>RNA sequencing (RNA-seq) is a genomic approach for quantitative analysis of messenger RNA molecules in a biological sample and is useful for studying cellular responses. RNA-seq has fueled much discovery and innovation in medicine over recent years. However, bulk RNA-seq often suffers from the complexity of tissues and fails to resolve the actual activity on the cell<br>scale. Single-cell RNA-Seq is a more advanced technique used in biological research to quantify the transcriptome of a complex tissue by characterizing individual cells within that<br>specific tissue. scRNA-seq can describe RNA molecules in individual cells with high resolution and on a genomic scale. In addition, scRNA-seq allows for the comparison of the<br>transcriptomes among cells. Therefore, scRNA-seq has been to evaluate transcriptional differences within a population of cells, thus revealing unknown heterogeneity within a tissue.<br>Similarly, assessments of transcriptional differences between individual cells have been used to identify rare cell populations that have been undetected in analyses of pooled cells, for example, malignant tumor cells within a tumor mass. Conclusively, heterogeneity analysis remains a core<br>reason for embarking on scRNA-seq.</p>
+<h3 id="Procedures-to-perform-scRNA-seq"><a href="#Procedures-to-perform-scRNA-seq" class="headerlink" title="Procedures to perform scRNA-seq"></a>Procedures to perform scRNA-seq</h3><p>Most established scRNA-seq experiments have adhered to a general methodological pipeline. The first and most important step for scRNA seq is single-cell isolation. The step is highly<br>variable and flexible depending on the tissue type of interest. The common methods of single-cell isolation include mechanical, enzymatic, or combinatorial separation. Next, a micro<br>reaction containing a single cell is necessary for following molecular biology reactions. Microfluidics is one of the most common devices to establish the environment because of its lost<br>cost and low sample consumption. In the process of the droplet (microemulsion used to isolate individual cell reactions) formation, the single-cell suspension is combined with beads made with resin and flowed with oil to produce an emulsion.The droplet is created for a micro reaction that encapsulates a single resin bead and a single cell. Then detergent will destroy the cell, releasing its mRNA. The released mRNA will be captured by the polydT coated on the bead thanks to their polyA tails. Next, polydT-primed mRNA is converted to complementary DNA (cDNA) by reverse transcriptase. Depending on the scRNA-seq protocol, the reverse-transcription primers will also have other nucleotide sequences ligated to them, such as adaptor sequences for detection on sequencing platforms, unique molecular identifiers to mark unequivocally a single mRNA molecule, as well as cell barcodes to encode information on<br>cellular origin. PCR then amplifies the cDNA. Enrichment of cDNA produces adequate copies of targeted DNA because next-generation sequencing requires a certain amount of material in order to generate accurate and reliable results. Next-generation sequencing is completed by loading samples into flow cells that match them into different base pairs and capture an image of the result. Base calling is done by identifying the different colors of clusters.</p>
+<p><img src="/f1.png"><br>Hwang, B., Lee, J.H. &amp; Bang, D. Single-cell RNA sequencing technologies and bioinformatics pipelines. Exp Mol Med 50, 1–14 (2018). <a target="_blank" rel="noopener" href="https://doi.org/10.1038/s12276-018-0071-8">https://doi.org/10.1038/s12276-018-0071-8</a></p>
+<h3 id="scRNA-seq-data-analysis-workflow"><a href="#scRNA-seq-data-analysis-workflow" class="headerlink" title="scRNA-seq data analysis workflow"></a>scRNA-seq data analysis workflow</h3><ol>
+<li>Alignment</li>
+</ol>
+<p>Alignment is the process of mapping sequence reads to determine the location of each read on the whole genome to identify its gene name and location. Alignment is an important part of<br>analyzing next-generation sequencing data. Its goal is to provide information about the genome location, discover new genes or transcripts, and provide information about which gene the mRNA comes from. The input of alignment is a short sequenced read produced by the sequencing platform, normally in form of a FASTQ file, which contains information about sequencing quality, read sequences, and machine information. The commonly used alignment algorithm is the Burrows-wheeler transform, which significantly reduces the complexity of<br>computation. Raw sequencing data are processed and aligned to give count matrices.</p>
+<ol start="2">
+<li>Quality control</li>
+</ol>
+<p>Before analyzing the single-cell gene expression data, I must ensure that all cellular barcode data are from viable cells. Cell QC is commonly performed based on three QC covariates: the<br>number of transcripts per cell (n_Counts), the number of genes per cell (n_features), and the fraction of counts from mitochondrial genes (mt.percent). The distributions of these QC<br>covariates are examined for outlier peaks that are filtered out by thresholding. These outlier barcodes can correspond to dying cells, cells with broken membranes, or doublets. For example, barcodes with a low count depth, few detected genes, and a high fraction of mitochondrial counts are indicative of cells whose cytoplasmic mRNA has leaked out through a broken membrane, and thus, only mRNA located in the mitochondria is still conserved. In contrast, cells with unexpectedly high counts and a large number of detected genes may represent doublets. Thus, high n_Count thresholds are commonly used to filter out potential<br>doublets.</p>
+<ol start="3">
+<li>Normalization</li>
+</ol>
+<p>Each count in a count matrix represents the successful capture, reverse transcription, and sequencing of a molecule of cellular mRNA. Count depths for identical cells can differ due to the<br>variability inherent in each of these steps. Thus, when gene expression is compared between cells based on count data, any difference may have arisen solely due to sampling effects.<br>Normalization addresses this issue by scaling count data to obtain correct relative gene expression abundances between cells.</p>
+<p>There are two common normalization methods. Transcripts per million or reads per kilobase per million mapped released. The difference between the two are operation orders. Transcripts per millions of firsts normalize to gene length and normalize to total transcripts. On the other hand, reads per kilobase per million mapped reads are the opposite. Normalization is<br>an important part of sequencing because it removes the technical variability that includes technique variability or biological variability which causes inaccuracy or invalid data. Since sequenced RNA has differences due to technical problems. Normalization is applied to remove the difference in gene expression to produce correct data.</p>
+<p><img src="/Project-Summary/f2.png"></p>
+<p>Hwang, B., Lee, J.H. &amp; Bang, D. Single-cell RNA sequencing technologies and  bioinformatics pipelines. Exp Mol Med 50, 1–14 (2018). <a target="_blank" rel="noopener" href="https://doi.org/10.1038/s12276-018-0071-8">https://doi.org/10.1038/s12276-018-0071-8</a></p>
+<ol start="4">
+<li>Identify variable genes</li>
+</ol>
+<p>One single-cell RNA-seq dataset can contain expression values of up to 25,000 genes. Most of these genes are not informative for a given scRNA-seq dataset because they are consistently<br>shared by all live cells, and many genes will essentially contain zero counts because they are silenced in specific cells. Even after filtering out these zero-count genes in the QC step, the feature space for a single-cell dataset can have over 15,000 dimensions. To ease the computational burden on downstream analysis tools, reduce the noise in the data, and visualize the data, one can use several approaches to reduce the dimensionality of the dataset. The goal of identifying variable genes is to identify genes that show significant variation across different cell types, facilitating in distinguishing and clustering different cells. Mean variance is a common way to identify variable genes. The method is completed by plotting the variance of gene expression against the mean expression level among all the other samples or cells. Genes that have a high variance value are considered more variable and are selected for downstream analysis.</p>
+<ol start="5">
+<li>Principal component analysis</li>
+</ol>
+<p>After selecting variable genes, the dimensions of single-cell expression matrices can be further reduced by dedicated dimensionality reduction algorithms. These algorithms embed the<br>expression matrix into a low-dimensional space, which is designed to capture the underlying structure in the data in as few dimensions as possible.</p>
+<p>Principal component analysis (PCA) is a powerful and widely used technique for compressingmhigh-dimensional datasets. In high-dimensional datasets, the number of features can be very<br>large, making it extremely hard to visualize and analyze the data. PCA is a popular method that simplifies the data by finding a lower representation of the data but still preserving the important features and values of the dataset.</p>
+<p><img src="/Project-Summary/f3.png"></p>
+<p>Hwang, B., Lee, J.H. &amp; Bang, D. Single-cell RNA sequencing technologies and bioinformatics pipelines. Exp Mol Med 50, 1–14 (2018). <a target="_blank" rel="noopener" href="https://doi.org/10.1038/s12276-018-0071-8">https://doi.org/10.1038/s12276-018-0071-8</a></p>
+<ol start="6">
+<li>Clustering analysis</li>
+</ol>
+<p>After dimension reduction, clustering analysis is applied. Organizing cells into clusters is typically the first intermediate result of any single-cell analysis. Clusters allow us to infer the identity of cell populations. Clusters are obtained by grouping cells based on the similarity of their gene expression profiles. Expression profile similarity is determined via distance metrics, which often take dimensionality-reduced representations as input. A common example of similarity scoring is Euclidean distances that are calculated on the PC-reduced expression space.</p>
+<ol start="7">
+<li>Annotation</li>
+</ol>
+<p>On a gene level, clustered data are analyzed by finding the gene signatures of each cluster. These marker genes characterize the cluster and are used to annotate it with a meaningful biological label. This label represents the identity of cells within the cluster. The goal of annotation is to find characteristic markers for cells since each individual cell has its own unique marker.</p>
+<h3 id="Analyzing-scRNA-seq-data-from-triple-negative-breast-cancer-patients"><a href="#Analyzing-scRNA-seq-data-from-triple-negative-breast-cancer-patients" class="headerlink" title="Analyzing scRNA-seq data from triple-negative breast cancer patients"></a>Analyzing scRNA-seq data from triple-negative breast cancer patients</h3><p>I am applying the above-summarized workflow to analyze a dataset from triple-negative breast cancer that has been sequenced to reveal the composition of different cell types in the tumor. I installed the sequence completed RNA package from the National Center for Biotechnology and used dplyr, patchwork, and Seurat package in R studio to help us complete the workflow and correctly plot the result.</p>
+<p>The first step of single-cell RNA sequencing is quality control, where I used a violin plot to show the nCount_RNA, nFeature_RNA, and mitochondria percentage of the sequenced cells. From the violin plot, I can tell that the data set has been normalized from a uniform distribution of nCount_RNA and nFeature_RNA, and controlled mitochondria percentage. The number of genes detected in nFeature RNA is relatively high due to doublets caused by two cells in one single droplet during single-cell analysis.</p>
+<p><img src="/Project-Summary/f4.png"></p>
+<p>Next, I find the variable of these genes by applying variance stabilizing transformation to the genes. In this step, the dataset was filtered to keep only genes that are “informative” of the variability in the data. Thus, highly variable genes are often used. Variance stabilizing transformation (VST) is a statistical technique that is used to transform data in a way that the variance of the transformed data is approximately constant across the range of the data. This is often done to prepare the data for further analysis or modeling, as many statistical methods assume that the variance of the data is constant. In this process, I compute a score for each gene and choose the top two thousand most variable genes for the next step, PCA.</p>
+<p><img src="/Project-Summary/f5.png"></p>
+<p>Now I perform principal component analysis (PCA) on the genes that are only highly variable in the dataset. Reduced dimensions are generated through linear combinations of feature space dimensions. PCA visualizes the graph of the first two principal components from the dataset which generates a scatterplot where the X-axis represents a gene and Y-axis represents the loadings of the genes. Using an elbow plot, it identified the different inclusions of variance in each component. Usually, the first principal component contains the most variance within the dataset. The variance decreases in the following components and the first 8 components cover almost all the variance. Hence, I only need the first 8 components for dimension reduction.</p>
+<p><img src="/Project-Summary/f6.png"></p>
+<p>After PCA I apply dimension reduction. I only use the first 8 components of the data because the components after that do not provide useful information for this process. This means that<br>cells that are close to each other in the high-dimensional space defined by the first eight principal components will be considered neighbors. I also use the function “find clusters” to<br>organize different cell types into different clusters, which calculated the Euclidean distance among points and clustered them according to the distances. After this, I graphed them using the uniform manifold approximation and projection (UMAP) algorithm, a technique for dimension reduction that organizes cells that have similar identities to a single cluster. From the graph, I can tell that there are 6 different clusters that represented 6 different types of cells.</p>
+<p><img src="/Project-Summary/f7.png"></p>
+<p>Since I know most cell types that are included in the tumor, I can create a violin plot of a specific gene in the dataset to ascertain the expression level across different clusters. For the unknown cell types, I can apply the “find marker” function to find the most variable gene to annotate the unknown cell types. From the violin graph the higher the expression level the more I can confirm the cell identity of each cluster. To figure out the single cell type expression cluster that<br>corresponds with the correct gene, I use The Human Protein Atlas website to find more information about the genes.</p>
+<p>From the violin graph of gene XBP1, I found it is uniquely expressed in cluster 4. XBP1 is a gene that is expressed by B cells to differentiate into plasma cells. Therefore I can confirm that cluster 4 is a B-cell cluster.</p>
+<p><img src="/Project-Summary/f8.png"></p>
+<p>Similarly, based on gene expression of CCL3, the cytokine chemokine ligand 3, I concluded that cluster 5 is myeloid cells.</p>
+<p><img src="/Project-Summary/f9.png"></p>
+<p>The graph of gene IL7R is the most dominant in cluster 3 and so cluster 3 is T cells.</p>
+<p><img src="/Project-Summary/f10.png"></p>
+<p>The graph of gene LUM, which encodes lumican for extracellular matrix, indicates the highest expression level in cluster 2 and is identified as connective tissue cells.</p>
+<p><img src="/Project-Summary/f11.png"></p>
+<p>The gene KRT15 has the highest expression level in cluster 0 and is identified as a Cancer cell.However, cancer cell clearly diverged into two major populations in UMAP, which suggested thatthe cancer cell shared different characteristics and likely formed heterogeneous population.</p>
+<p><img src="/Project-Summary/f12.png"></p>
+<p>Finally, I annotate different clusters by assigning each cluster a cell name based on its own  expression and labeling its name next to its cluster. Looking As a result, we revealed different types of cells with different clusters.</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/06/13/Reflection/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          Reflection
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2023 Dao Wen
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/preccrep/hexo-theme-jelly" target="_blank">Jelly</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
